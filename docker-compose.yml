@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  slotMachineApp:
+    build: .
+    image: slot_machine:latest
+    container_name: slot_machine
+    ports:
+      - "8000:8000"
+    volumes:
+      - './app:/app'
